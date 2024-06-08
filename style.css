@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-family: "Source Serif 4", sans-serif;
+  font-size: 62.5%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  color: #A54328;
+  font-size: 1.6rem;
+  background: url(./assets/desktop-bg.jpg);
+}
+
+main{
+  max-width: 32rem;
+  margin-inline: auto;
+  padding: 5.6rem 4.0rem;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+img{
+  width: 100%;
+  margin-block: 3.2rem;
+}
+
+h1, h2{
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
+h2{
+  margin-bottom: 3.2rem;
+}
+
+p, li, strong{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+ul, ol{
+  padding-left: 2.4rem;
+}
+
+ul{
+  margin-bottom: 3.2rem;
+}
+
+button{
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #A54328;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+  margin-top: 3.2rem;
+}
+
+button:hover{
+  background-color: #79301c;
+}
+
+@media (min-width: 1120px){
+  body{
+    font-family: "Source Serif 4", sans-serif;
+  }
+
+  main{
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 19rem;
+    padding: 9rem 6rem;
+  }
+
+  h1, h2{
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  p, li, strong{
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  button{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .recipe{
+    max-width: 43.5rem;
+  }
+
+  .ingredients{
+    max-width: 52.5rem;
+  }
+}
